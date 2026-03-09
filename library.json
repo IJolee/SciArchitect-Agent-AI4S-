@@ -1,0 +1,67 @@
+{
+    "DeepSeek_V3.pdf": {
+        "category": "NLP",
+        "title_cn": "DeepSeek-V3 技术报告",
+        "summary": "DeepSeek-V3 是一个强大的混合专家（MoE）语言模型，具有6710亿总参数，每个token激活370亿参数，通过高效架构和训练策略在多项基准测试中表现优异。"
+    },
+    "LoFTR_Paper.pdf": {
+        "category": "CV",
+        "title_cn": "LoFTR：基于Transformer的无检测器局部特征匹配方法",
+        "summary": "提出一种基于Transformer的端到端局部特征匹配方法，通过粗到精的密集匹配策略解决低纹理区域特征检测难题，在视觉定位任务中达到SOTA性能。"
+    },
+    "manual.pdf": {
+        "category": "CV",
+        "title_cn": "智绘巡界：基于“语义感知拼接”与多模态大模型决策的无人机低空全景巡检系统",
+        "summary": "该项目结合语义感知图像拼接技术和多模态大模型，开发无人机低空全景智能巡检系统。"
+    },
+    "Transformer_Paper.pdf": {
+        "category": "NLP",
+        "title_cn": "注意力机制就是一切",
+        "summary": "提出了一种基于纯注意力机制的Transformer网络架构，在机器翻译任务上取得了优越的性能。"
+    },
+    "2401.09417v3.pdf": {
+        "title_cn": "Vision Mamba: 基于双向状态空间模型的高效视觉表示学习",
+        "category": "CV",
+        "task": "图像分类、目标检测、实例分割、语义分割",
+        "method": "Mamba (双向状态空间模型)",
+        "dataset": "ImageNet (隐含提及)",
+        "metrics": "mAP (目标检测/实例分割), Top-1 Acc (分类), mIoU (语义分割), FPS, GPU Memory",
+        "status": "High"
+    },
+    "2408.00714v2.pdf": {
+        "title_cn": "SAM 2：图像和视频中的通用分割",
+        "category": "CV",
+        "task": "视觉分割（图像和视频）",
+        "method": "Transformer with streaming memory",
+        "dataset": "自建大规模视频分割数据集",
+        "metrics": "准确率、交互效率（3倍减少）、速度（6倍提升）",
+        "status": "High"
+    },
+    "2602.05975v2.pdf": {
+        "title_cn": "SAGE: 深度研究代理的检索基准测试与改进",
+        "category": "NLP",
+        "task": "科学文献检索",
+        "method": "corpus-level test-time scaling framework",
+        "dataset": "SAGE benchmark (1,200 queries across four scientific domains, 200,000 paper retrieval corpus)",
+        "metrics": "performance gains on short-form and open-ended questions",
+        "status": "High"
+    },
+    "9891_LaRA_Benchmarking_Retriev.pdf": {
+        "title_cn": "LaRA: 检索增强生成与长上下文大语言模型基准测试——长上下文与检索增强生成路由无银弹",
+        "category": "NLP",
+        "task": "问答任务评估",
+        "method": "检索增强生成(RAG)与长上下文(LC)LLM对比分析",
+        "dataset": "LaRA(包含2326个测试用例)",
+        "metrics": "未明确提及(需参考论文正文)",
+        "status": "High"
+    },
+    "meta.pdf": {
+        "title_cn": "Llama 3 模型群",
+        "category": "NLP",
+        "task": "多语言处理, 代码生成, 推理, 工具使用, 图像/视频/语音识别",
+        "method": "Transformer",
+        "dataset": "未明确提及",
+        "metrics": "未明确提及",
+        "status": "High"
+    }
+}

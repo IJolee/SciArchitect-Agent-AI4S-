@@ -1,0 +1,18 @@
+# 1. 绝对机密：环境变量与密钥
+.env
+
+# 2. 庞大的物理数据库与缓存
+brain_db/
+docstore_data/
+assistant_cache.json
+
+# 3. 虚拟环境与 Python 临时文件
+my_env/
+__pycache__/
+*.pyc
+
+# 4. 本地论文原件（防止侵权和仓库超载）
+*.pdf
+
+# 5. 如果你之前下载了本地大模型，也屏蔽掉
+all-MiniLM-L6-v2/
