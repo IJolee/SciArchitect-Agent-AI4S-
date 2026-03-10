@@ -126,7 +126,10 @@ python-dotenv：用于加载 .env 文件中的环境变量。
 **模式 B（跨文检索）**：如果单篇论文的信息不够，支持无缝切换到 Step 4 的向量库模式，进行跨论文的全局追问。
 
 运行效果截图：
+## 智能采样选单
 ![Step 2 智能采样选单](images/step2.1.png)
+
+## 深度对线演示
 ![Step 2 深度对线演示](images/step2.2.png)
 
 
@@ -160,6 +163,7 @@ python-dotenv：用于加载 .env 文件中的环境变量。
 生成的所有向量特征与元数据（Metadata）都会被写入本地物理目录 brain_db 中。只要跑过一次，后续的提问全部基于本地向量库进行秒级检索，不再重复消耗 Embedding 算力。
 
 运行效果截图：
+## 向量化构建
 ![Step 3 向量化构建](images/step3.png)
 
 
@@ -195,7 +199,10 @@ python-dotenv：用于加载 .env 文件中的环境变量。
 实现：脚本在本地维护了一个会话缓存文件 assistant_cache.json，用于记录历史问答上下文。这使得大模型能够理解代词和连贯的学术逻辑，而不需要你每次提问都重复背景。
 
 运行效果截图：
-![Step 4 全局追问演示](images/step4.png)
+## 深度对线演示
+![Step 4 深度对线演示](images/step4.png)
+
+## 全局追问演示
 ![Step 4 全局追问演示](images/step4.2.png)
 
 
