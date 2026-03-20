@@ -231,22 +231,6 @@ class AcademicBrain:
             
         return unique_docs
 
-        # 5. 🧼 严格去重逻辑 (保持你原有的逻辑)
-        unique_docs, seen_fp, seen_sp, src_counts = [], set(), set(), {}
-        for doc in results:
-            source = doc.metadata.get("source", "unknown")
-            page = doc.metadata.get("page", 0)
-            sp_key, fp = f"{source}__{page}", normalize_fingerprint(doc.page_content)
-            
-            # 这里的限制：每篇论文最多出 4 个切片
-            if fp in seen_fp or sp_key in seen_sp or src_counts.get(source, 0) >= 4: continue
-            
-            seen_fp.add(fp); seen_sp.add(sp_key)
-            src_counts[source] = src_counts.get(source, 0) + 1
-            unique_docs.append(doc)
-            if len(unique_docs) >= MAX_FINAL_DOCS: break
-            
-        return unique_docs
 
 # =========================
 # 4. ResearchAgent：博导级弹性溯源 (解除幻觉束缚)
